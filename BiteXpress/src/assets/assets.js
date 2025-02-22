@@ -47,6 +47,10 @@ import veg_4 from './panner_curry.jpg'
 import veg_5 from './kadhi_pakoda.jpg'
 import veg_6 from './veg_thali.jpeg'
 
+import icon1 from './icon1.png'
+import icon2 from './icon2.png'
+import icon3 from './icon3.png'
+export{icon1,icon2,icon3}
 
 export const menu_list = [
     {
@@ -397,8 +401,7 @@ export const food_list = [
         description: "A wholesome meal platter with dal, two sabzi, rice, roti, papad, salad, and dessert.",
         category:"Pure Veg" 
     }, 
-         
-         
+                
 ]
  
 
