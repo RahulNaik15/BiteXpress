@@ -62,7 +62,9 @@ import noodles_6 from './veg_noodles.jpg'
 import icon1 from './icon1.png'
 import icon2 from './icon2.png'
 import icon3 from './icon3.png'
-export{icon1,icon2,icon3}
+import iphone from './apple.avif'
+import android from './android.avif'
+export{icon1,icon2,icon3,iphone,android}
 
 export const menu_list = [
     {
