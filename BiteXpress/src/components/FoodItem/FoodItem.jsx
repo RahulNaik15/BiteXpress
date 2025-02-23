@@ -1,23 +1,25 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import './fooditem.css' 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar} from "@fortawesome/free-solid-svg-icons";
 import { icon1,icon2,icon3 } from '../../assets/assets';
+import { StoreContext } from '../../context/StoreContext';
 
 
 const FoodItem = ({ id, name, price, rating, description, image }) => {
   
-  const [itemCount, setItemCount] = useState(0);
-
+  
+  const { cartItem, addToCart, removeFromCart } = useContext(StoreContext);
   return (
     <div className='food-item'>
         <div className='food-item-img-container'>
         <img className='food-item-image' src={image} alt=""></img>
-        {!itemCount ? <img className='add' onClick={()=>setItemCount(prev=>prev+1)} src={icon1} alt=""></img>
+        {!cartItem[id] 
+          ?<img className='add' onClick={() => addToCart(id)} src={icon1} alt=""></img>
           : <div className='food-item-counter'>
-            <img onClick={()=>setItemCount(prev=>prev-1)} src={icon2} alt=""></img>
-            <p>{itemCount}</p>
-            <img onClick={()=>setItemCount(prev=>prev+1)} src={icon3} alt=""></img>
+            <img onClick={()=>removeFromCart(id)} src={icon2} alt=""></img>
+            <p>{cartItem[id]}</p>
+            <img onClick={()=>addToCart(id)} src={icon3} alt=""></img>
           </div>
 
         }

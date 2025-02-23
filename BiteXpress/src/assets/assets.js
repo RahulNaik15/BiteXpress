@@ -47,6 +47,18 @@ import veg_4 from './panner_curry.jpg'
 import veg_5 from './kadhi_pakoda.jpg'
 import veg_6 from './veg_thali.jpeg'
 
+import pasta_1 from './Spaghetti_pasta.jpg'
+import pasta_2 from './macaroni_pasta.jpg'
+import pasta_3 from './penne_pasta.png'
+import pasta_4 from './fusilli_pasta.jpg'
+
+import noodles_1 from './chicken_noodles.jpg'
+import noodles_2 from './chow_mein_noodles.webp'
+import noodles_3 from './egg_noodles.jpg'
+import noodles_4 from './garlic_noodles.jpg'
+import noodles_5 from './hakka_noodles.jpg'
+import noodles_6 from './veg_noodles.jpg'
+
 import icon1 from './icon1.png'
 import icon2 from './icon2.png'
 import icon3 from './icon3.png'
@@ -401,7 +413,99 @@ export const food_list = [
         description: "A wholesome meal platter with dal, two sabzi, rice, roti, papad, salad, and dessert.",
         category:"Pure Veg" 
     }, 
-                
+        
+     
+     {
+        _id: "35",
+        name: "Spaghetti",
+        image: pasta_1,
+        rating: 4.2,
+        price: 170,
+        description: "Long, thin pasta strands served with rich sauces, vegetables, herbs, or meat.",
+        category:"Pasta" 
+    }, 
+     {
+        _id: "36",
+        name: "Macaroni",
+        image: pasta_2,
+        rating: 4.3,
+        price: 150,
+        description: "Small, curved pasta tubes, perfect for creamy, cheesy, or baked dishes flavoured with sauces.",
+        category:"Pasta" 
+    }, 
+     {
+        _id: "37",
+        name: "Penne",
+        image: pasta_3,
+        rating: 4.4,
+        price: 140,
+        description: "Cylindrical, ridged pasta, ideal for thick, creamy, or tomato-based sauces.",
+        category:"Pasta" 
+    }, 
+     {
+        _id: "38",
+        name: "Fusilli",
+        image: pasta_4,
+        rating: 4.0,
+        price: 120,
+        description: "Spiral-shaped pasta that holds sauces well, great for salads and baked dishes.",
+        category:"Pasta" 
+    }, 
+     
+     {
+        _id: "39",
+        name: "Chicken Noodles",
+        image: noodles_1,
+        rating: 4.5,
+        price: 150,
+        description: "Stir-fried noodles with tender chicken, vegetables, and flavorful sauces.",
+        category:"Noodles" 
+    }, 
+     {
+        _id: "40",
+        name: "Chowmein Noodles",
+        image: noodles_2,
+        rating: 4.2,
+        price: 100,
+        description: "Spicy stir-fried noodles with vegetables, sauces, and optional protein.",
+        category:"Noodles" 
+    }, 
+     {
+        _id: "41",
+        name: "Egg Noodles",
+        image: noodles_3,
+        rating: 4.0,
+        price: 110,
+        description: "Soft, chewy noodles made with eggs, stir-fried with sauces and vegetables and onions.",
+        category:"Noodles" 
+    }, 
+     {
+        _id: "42",
+        name: "Garlic Noodles",
+        image: noodles_4,
+        rating: 3.7,
+        price: 90,
+        description: "Flavorful noodles tossed with garlic, butter, eggs, vegetables, soy sauce, and herbs.",
+        category:"Noodles" 
+    }, 
+     {
+        _id: "43",
+        name: "Hakka Noodles",
+        image: noodles_5,
+        rating: 4.1,
+        price: 135,
+        description: "Indo-Chinese stir-fried noodles with vegetables, soy sauce, and chili flavors.",
+        category:"Noodles" 
+    }, 
+      {
+        _id: "44",
+        name: "Veg Noodles",
+        image: noodles_6,
+        rating: 4.1,
+        price: 100,
+        description: "Stir-fried noodles with mixed vegetables, soy sauce, and aromatic spices.",
+        category:"Noodles" 
+    }, 
 ]
  
 
