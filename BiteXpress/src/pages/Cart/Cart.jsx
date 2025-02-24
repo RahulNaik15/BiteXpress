@@ -1,11 +1,14 @@
 import React, { useContext } from 'react'
 import './cart.css'
 import {StoreContext} from '../../context/StoreContext'
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
 
   const { cartItem, food_list, removeFromCart, getTotalCartAmount} = useContext(StoreContext);
-
+  
+  const navigate = useNavigate();
+   
   return (
     <div className='cart'>
       <div className='cart-items'>
@@ -50,15 +53,15 @@ const Cart = () => {
             <hr></hr>
             <div className="cart-total-detail">
               <p>Delivery Fee</p>
-              <p>₹ {40}</p>
+              <p>₹ {getTotalCartAmount()===0 ? 0 : 40 }</p>
             </div>
             <hr></hr>
             <div className="cart-total-detail">
               <b>Total</b>
-              <b>₹ {getTotalCartAmount()+40}</b>
+              <b>₹ {getTotalCartAmount()===0 ? 0 : getTotalCartAmount()+40}</b>
             </div>
           </div>
-          <button>Proceed To Checkout</button>
+          <button onClick={()=>navigate('/order')}>Proceed To Checkout</button>
         </div>
         <div className="cart-promocode">
           <div>
